@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import assets from "./assets";
+import styles from "./styles/Global";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      <div className="my-2 z-10 px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
+        <p className={`${styles.pText} ${styles.whiteText}`}>
+          Made by{" "}
+          <a
+            href="https://www.linkedin.com/in/ismail-el-khattab/"
+            target="_blank"
+          >
+            <span className="bold hover:cursor-pointer hover:underline">
+              Ismail El Khattab
+            </span>
+          </a>{" "}
+          <span> @ WGU</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
